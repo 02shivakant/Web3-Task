@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap');
+
+:root {
+  --bg-color: #1046A0;
+  --surface: #ffffff;
+  --primary: #56B000;
+  --primary-shadow: #3F8200;
+  --accent: #007BFF;
+  --accent-shadow: #0056b3;
+  --danger: #E84A5F;
+  --danger-shadow: #B33446;
+  --warning: #F1C40F;
+  --warning-shadow: #B89500;
+  --text: #333333;
+  --muted: #888888;
+  --radius: 12px;
+  --shadow: 0 6px 0px rgba(0,0,0,0.15);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  background-image: radial-gradient(circle at center, #185ADB 0%, #1046A0 100%);
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.game-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.game-btn:active {
+  transform: translateY(4px);
+  box-shadow: none !important;
+}
+
+.btn-green { background-color: var(--primary); box-shadow: 0 6px 0px var(--primary-shadow); }
+.btn-blue { background-color: var(--accent); box-shadow: 0 6px 0px var(--accent-shadow); }
+.btn-red { background-color: var(--danger); box-shadow: 0 6px 0px var(--danger-shadow); }
+.btn-yellow { background-color: var(--warning); box-shadow: 0 6px 0px var(--warning-shadow); color: var(--text); }
+
+.game-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.game-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.game-input:focus { border-color: var(--accent); }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #aaa; }
