@@ -10,7 +10,7 @@ import Game from './components/Game';
 // Once you deploy the backend to Render, replace the link below 
 // with your actual Render URL (e.g., "https://skribbl-clone-123.onrender.com")
 // =========================================================
-const BACKEND_URL = "http://localhost:3001"; 
+const BACKEND_URL = "https://web3-task.onrender.com"; 
 const socket = io(BACKEND_URL);
 
 export default function App() {
